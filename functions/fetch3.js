@@ -3,7 +3,7 @@ exports.handler = function(event, context, callback) {
     () =>
       callback(null, {
         statusCode: 200,
-        body: 'Fetched!!'
+        body: JSON.stringify(event)
       }),
     3000
   );
